@@ -1,0 +1,9 @@
+Created by: Josh Grochowski (josh[at]kastang[dot]com. 
+
+Please view example.php for sample use. Also, please read the function
+headings in RealmStatus.php for detailed summaries of how information is
+returned. 
+
+This is an initial release, after any unforseen bugs are worked out, caching 
+and other features will be added to the script. 
+
