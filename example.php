@@ -1,4 +1,4 @@
-<?
+<?php
 include('RealmStatus.php');
 
 $server = 'Eitrigg';
