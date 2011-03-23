@@ -39,6 +39,7 @@
  * @author Josh Grochowski (josh[at]kastang[dot]com)
  */
 
+header('Content-Type: text/html; charset=UTF-8');
 class RealmStatus {
 
     /**
@@ -102,11 +103,11 @@ class RealmStatus {
                 $s = explode(" ", trim($status->item($i)->nodeValue));
 
                 $info = array (
-                    "name" => trim($name->item($i)->nodeValue),
+                    "name" => trim(utf8_decode($name->item($i)->nodeValue)),
                     "status" => $s[1],
                     "type" => substr(substr(trim($type->item($i)->nodeValue),0,-1),1),
                     "population" => trim($population->item($i)->nodeValue),
-                    "locale" => trim($locale->item($i)->nodeValue)
+                    "locale" => trim(utf8_decode($locale->item($i)->nodeValue))
                 );
 
                 array_push($serverArray, $info);
